@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Personal de Liz Carola Barrios</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e8f14c3e.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      background: #eec5dd;
+    }
+    .banner {
+      background: url('https://www.transparenttextures.com/patterns/flowers.png'), linear-gradient(to right, #c05194, #c87ab8);
+      padding: 40px 0;
+      text-align: center;
+      font-family: 'Georgia', serif;
+    }
+    .perfil-card {
+      background: #dda7df;
+      border-radius: 15px;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(243, 240, 242, 0.1);
+    }
+    .perfil-card img {
+      width: 130px;
+      height: 130px;
+      border-radius: 100%;
+      margin-bottom: 15px;
+    }
+    .perfil-card h3 {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+    }
+    .social-icons img {
+       width: 30px;
+       height: 30px;
+       border-radius: 100%;
+       object-fit: cover;
+       margin: 0 5px;
+       background: rgb(245,148,196);
+       padding: 2px;
+       transition: transform 0.5s;
+       
+}
+
+      .social-icons img:hover {
+       transform: scale(1.1); 
+    }
+    .accordion-button::after {
+      transform: scale(1.2);
+    }
+    footer {
+      background-color: #eec5dd;
+      text-align: center;
+      padding: 10px 0;
+      color: #333;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <div class="banner">
+    <h1><i class="fas fa-heart"></i> Desarrolladora Web</h1>
+  </div>
+
+  <!-- Contenido principal -->
+  <div class="container mt-4">
+    <div class="row justify-content-center">
+      <!-- Tarjeta izquierda -->
+      <div class="col-md-4 mb-4">
+        <div class="perfil-card">
+          <img src="MI_FOTO.jpg" alt="Liz Carola Barrios">
+          <h3>Liz Carola Barrios</h3>
+          <p>Desarrolladora web</p>
+          <p>Estas son mis redes sociales</p>
+           <div class="social-icons">
+    <!-- Facebook -->
+    <a href="https://www.facebook.com/Liz Barrios" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://www.instagram.com/barrios.carol.3" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+
+     <!-- Twitter -->
+  <a href="https://twitter.com/" target="_blank">
+    <img src="data:image/jpeg;base64,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" alt="Twitter">
+  </a>
+
+  <!-- WhatsApp -->
+    <a href="https://wa.me/595985616076" target="_blank">
+      <img src="https://img.freepik.com/vector-premium/icono-whatsapp-vectorial-gratis_634294-1658.jpg?semt=ais_hybrid&w=740" alt="WhatsApp">
+    </a>
+
+  </div>
+          <p class="mt-3">Contacto: <a href="mailto:lizcarolabarrios@mail.com" style="color: rgb(49, 25, 102);">lizcarolabarrios@gmail.com</a></p>
+        </div>
+      </div>
+
+      <!-- Sección derecha -->
+      <div class="col-md-8">
+        <div class="bg-white rounded-3 p-4 shadow-sm">
+          <h2>Hola! Soy <strong style="font-family: Georgia, serif;">Liz Carola</strong></h2>
+          <p>
+            Soy una desarrolladora de software web apasionada por la tecnología.
+            Me encanta diseñar interfaces de usuario intuitivas y experiencias de usuario excepcionales.
+            Busco oportunidades para crecer como profesional y contribuir con mis habilidades en equipos de desarrollo dinámicos.
+          </p>
+
+          <!-- Acordeones -->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  <i class="fas fa-code me-2"></i><strong>Mis habilidades</strong>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+ <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>Git y GitHub</li>
+          </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                  <i class="fas fa-graduation-cap me-2"></i><strong>Mi Formación</strong>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Estudiante de Licenciatura en 
+                  Analisis de Sistemas en la Facultad de Ciencias y Tecnologia de la Universidad Nacional de Canindeyù.
+                </div>
+              </div>
+            </div>
+              <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                  <i class="fas fa-graduation-cap me-2"></i><strong>Idioma</strong>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <ul>
+            <li>Español</li>
+            <li>Guaranì</li>
+            <li>Portuguès</li>
+          </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                  <i class="fas fa-rocket me-2"></i><strong>Mis pasatiempos favoritos</strong>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Diseñar interfaces, crear contenido, ver tutoriales de tecnología y explorar nuevas herramientas.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2025 Liz Carola Barrios. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
